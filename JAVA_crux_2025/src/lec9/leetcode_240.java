@@ -16,12 +16,12 @@ public class leetcode_240 { // Search in 2D matrix || (Staircase Search)
 			}
 		}
 		int target = sc.nextInt();
-
+		Search(arr, target);
 	}
 
 	public static boolean Search(int[][] arr, int target) {
 		int row = 0;
-		int col = arr[0].length;
+		int col = arr[0].length - 1;
 		while (row < arr.length && col >= 0) {
 			if (arr[row][col] == target) {
 				return true;
