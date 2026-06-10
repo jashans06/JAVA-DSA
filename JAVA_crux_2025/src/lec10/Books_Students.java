@@ -4,7 +4,7 @@ public class Books_Students { // books allocation to students Binary Search
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] page = { 10, 20, 30, 40 };
+		int[] page = { 10, 20, 30, 40, 50 };
 		int nos = 2; // no of students
 		System.out.println(minPage(page, nos));
 	}
