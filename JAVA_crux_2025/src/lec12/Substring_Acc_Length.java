@@ -1,14 +1,14 @@
 package lec12;
 
-public class Palindrome_Acc_Aength {
+public class Substring_Acc_Length {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s = "nitin";
-		palindrome(s);
+		printSubstring(s);
 	}
 
-	public static void palindrome(String s) {
+	public static void printSubstring(String s) {
 		for (int length = 1; length <= s.length(); length++) {
 			for (int j = length; j <= s.length(); j++) {
 				int i = j - length;
