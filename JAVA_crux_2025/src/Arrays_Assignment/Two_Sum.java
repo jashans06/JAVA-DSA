@@ -12,7 +12,7 @@ public class Two_Sum { // Brute force approach
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		Arrays.sort(arr);
+
 		int target = sc.nextInt();
 		int[] pairs = printTwoSum(arr, target);
 		for (int i = 0; i < pairs.length; i++) {
@@ -38,13 +38,15 @@ public class Two_Sum { // Brute force approach
 //	}
 
 	public static int[] printTwoSum(int[] arr, int target) {
+		Arrays.sort(arr);
 		int n = arr.length;
 		int left = 0;
 		int right = n - 1;
 		while (left < right) {
-			if (arr[left] + arr[right] == target) {
+			int sum =arr[left] + arr[right];
+			if (sum == target) {
 				return new int[] { left, right };
-			} else if (arr[left] + arr[right] < target)
+			} else if (sum < target)
 				left++;
 			else
 				right--;
