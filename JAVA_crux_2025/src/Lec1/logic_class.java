@@ -20,8 +20,7 @@ public class logic_class {
 //			System.out.println("Number is prime");
 //		}
 
-		
-		//PRIME NUMBER USING BREAK STATEMENT
+		// PRIME NUMBER USING BREAK STATEMENT
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
 //		int count = 0;
@@ -37,9 +36,8 @@ public class logic_class {
 //			System.out.println("Number is prime");
 //		}
 //		
-		
-		
-	//   FIBONACCI SUM (for n number of terms)
+
+		// FIBONACCI SUM (for n number of terms)
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
 //		int a=0;
@@ -51,8 +49,7 @@ public class logic_class {
 //		}
 //		System.out.print(a);
 
-		
-		//FIBONACCI SERIES PRINT (for n number of terms)
+		// FIBONACCI SERIES PRINT (for n number of terms)
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
 //		int a=0;
@@ -64,9 +61,8 @@ public class logic_class {
 //		b=c;
 //		}
 //	System.out.print(a);
-		
-		
-		//GREATEST COMMON DIVISOR (GCD) OR HIGHEST COMMON FACTOR (HCF)
+
+		// GREATEST COMMON DIVISOR (GCD) OR HIGHEST COMMON FACTOR (HCF)
 //		int divisor=36;
 //		int divident=60;
 //		while(divident%divisor!= 0) {
@@ -76,7 +72,7 @@ public class logic_class {
 //		}
 //		System.out.println(divisor);
 //		
-		
+
 //		SUM OF A DIGIT (MODULO THE GIVEN DIGIT OR NUMBER WITH 10)
 //		Scanner sc=new Scanner(System.in);
 //		int num=sc.nextInt();
@@ -87,33 +83,26 @@ public class logic_class {
 //			num/=10;
 //		}
 //		System.out.println(sum);
-		
-		
-//		PASCAL TRIANGLE 
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+//		integer Palindrome 
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println(isPlaindrome(n));
+	}
+
+	public static boolean isPlaindrome(int n) {
+		int original = n;
+		int rev = 0;
+		while (n > 0) {
+			int rem = n % 10;
+			rev = rev * 10 + rem;
+			n /= 10;
+		}
+		if (rev == original) {
+			return true;
+		}
+		return false;
 	}
 
 }
