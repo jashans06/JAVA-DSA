@@ -20,7 +20,8 @@ public class Duplicate_Permutation {
 					break;
 				}
 			}
-			if (flag == false) {
+			if (flag == false
+					) {
 				String s1 = ques.substring(0, i);
 				String s2 = ques.substring(i + 1);
 				printPermutation(s1 + s2, ans + ch);
