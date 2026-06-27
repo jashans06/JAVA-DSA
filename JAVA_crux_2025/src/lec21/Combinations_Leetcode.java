@@ -3,7 +3,7 @@ package lec21;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Combinations_Leetcode {
+public class Combinations_Leetcode { //leetcode problem combinations
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
