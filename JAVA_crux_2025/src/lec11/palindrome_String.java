@@ -2,7 +2,7 @@ package lec11;
 
 import java.util.Scanner;
 
-public class palindrome_String {
+public class palindrome_String { //isPalindrome
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
