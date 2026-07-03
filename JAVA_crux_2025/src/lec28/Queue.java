@@ -21,7 +21,7 @@ public class Queue {
 		return size == arr.length;
 	}
 
-//	public void enqueue(int item) throws Exception { // linear queue
+//	public void enqueue(int item) throws Exception { // linear queue enqueue
 //		if (isFull()) {
 //			throw new Exception("Queue is full ");
 //		}
@@ -30,7 +30,7 @@ public class Queue {
 //		size++;
 //	}
 
-	public void enqueue(int item) throws Exception { // circular queue
+	public void enqueue(int item) throws Exception { // circular queue enqueue
 		if (isFull()) {
 			throw new Exception("Queue is full ");
 		}
@@ -39,12 +39,40 @@ public class Queue {
 		size++;
 	}
 
-	public int dequeue(int item) { // linear queue
+//	public int dequeue(int item) throws Exception{ // linear queue
+//if (isEmpty()) {
+//	throw new Exception("Queue is Empty");
+//}
+//		int rv = arr[front];
+//		front++;
+//		size--;
+//		return rv;
+//	}
 
+	public int dequeue() throws Exception { // circular queue dequeue
+		if (isEmpty()) {
+			throw new Exception("Queue is Empty");
+		}
 		int rv = arr[front];
-		front++;
+		front = (front + 1) % arr.length;
 		size--;
 		return rv;
+	}
+
+	public int getFront() throws Exception {
+		if (isEmpty()) {
+			throw new Exception("Queue is Empty");
+		}
+		int rv = arr[front];
+		return rv;
+	}
+
+	public void display() {
+		for (int i = 0; i < size; i++) {
+			int idx = (front + i) % arr.length;
+			System.out.print(arr[idx] + " ");
+		}
+		System.out.println();
 	}
 
 }
