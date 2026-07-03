@@ -9,7 +9,7 @@ public class Cars_Client {
 
 		c.Displaycar();
 		c1.Displaycar();
-		c.setColor("Green");
+//		c.setColor("Green");
 		c.setPrice(-1000);
 		c.Displaycar();
 		System.out.println("hey");
