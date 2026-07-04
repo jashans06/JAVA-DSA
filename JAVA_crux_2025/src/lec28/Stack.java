@@ -1,7 +1,7 @@
 package lec28;
 
 public class Stack {
-	private int[] arr;
+	protected int[] arr;
 	private int top = -1; // pointing to index
 
 	public Stack() {
