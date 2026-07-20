@@ -2,7 +2,7 @@ package lec44;
 
 import java.util.ArrayList;
 
-public class Generic_Heap<T extends Comparable<T>> {
+public class Generic_Heap<T extends Comparable<T>> { // class bound set 
 
 	ArrayList<T> list = new ArrayList<>();
 
